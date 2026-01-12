@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Heures qui Filent</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js"
+      defer
+    ></script>
+    <script>
+      const browserLang = navigator.language || navigator.userLanguage;
+      if (!browserLang.toLowerCase().startsWith('fr')) {
+        window.location.replace('/en.html');
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --red: #74050f;
+        --beige: #efd394;
+        --orange: #b2390c;
+        --blue: #33476d;
+        --grey: #24343d;
+        --white: #fbf7f1;
+        --yellow: #e8b84d;
+      }
+      .font-simple {
+        font-family: 'Montserrat Alternates', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body
+    class="font-sans text-[var(--grey)] bg-[var(--white)]"
+    style="font-family: 'Lobster', sans-serif"
+  >
+    <div
+      class="flex flex-col items-center w-full justify-center pt-4 px-10 min-h-screen pb-18"
+    >
+      <div class="max-w-md">
+        <div>
+          <div class="flex items-center justify-center pb-2 pt-8 md:pt-0">
+            <img src="img/logo.png" alt="Les Heures qui Filent" class="md:w-full" />
+          </div>
+
+          <h2 class="text-center text-2xl md:text-4xl pb-4">
+            Créations en cuir faites main avec passion et amour
+          </h2>
+          <div
+            class="text-xs md:text-base flex justify-center gap-2 md:gap-4 font-simple"
+          >
+            <p>Maroquinerie</p>
+            <p>|</p>
+            <p>Commandes personnalisées</p>
+          </div>
+          <div
+            class="text-xs md:text-base flex justify-center gap-2 md:gap-4 font-simple"
+          >
+            <p>Objets pour le Kendo</p>
+            <p>|</p>
+            <p>Médailles sportives</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 pt-8 relative">
+          <h3 class="text-2xl">Où trouver mes créations ?</h3>
+          <a
+            class="py-4 text-center rounded-lg bg-[var(--red)] drop-shadow-md hover:opacity-80"
+            href="https://www.etsy.com/shop/lesheuresquifilent"
+            target="_blank"
+          >
+            <div class="flex justify-center items-center gap-4 text-[var(--white)]">
+              <img src="img/shop.svg" class="w-6 md:w-8 drop-shadow-md" />
+              <p class="text-xl md:text-2xl text-shadow-md">Ma boutique en ligne</p>
+            </div>
+          </a>
+          <a
+            class="py-4 text-center rounded-lg bg-[var(--yellow)] drop-shadow-md hover:opacity-80"
+            href="https://www.instagram.com/lesheuresquifilent/"
+            target="_blank"
+          >
+            <div class="flex justify-center items-center gap-4 text-[var(--white)]">
+              <img src="img/instagram.svg" class="w-6 md:w-8 drop-shadow-md" />
+              <p class="text-xl md:text-2xl text-shadow-md">Instagram</p>
+            </div>
+          </a>
+          <div class="font-simple text-center text-xs md:text-base">
+            Retrouvez quelques unes de mes pièces chez :
+            <br />
+            <a
+              class="font-bold"
+              href="https://www.instagram.com/chiroptera.tattoopiercing/"
+              target="_blank"
+              >Chiroptera Tattoo</a
+            >
+            <br />1 rue Saint Loup - 63170 Aubière
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 pt-8 relative">
+          <h3 class="text-2xl">Me contacter</h3>
+          <a
+            class="py-4 text-center font-simple rounded-lg bg-[var(--orange)] drop-shadow-md hover:opacity-80"
+            href="https://wa.me/33647211508"
+            target="_blank"
+          >
+            <div class="flex justify-center items-center gap-4 text-[var(--white)]">
+              <img src="img/whatsapp.svg" class="w-6 md:w-8 drop-shadow-md" />
+              <p class="text-lg md:text-xl text-shadow-md">WhatsApp</p>
+            </div>
+          </a>
+          <a
+            class="py-4 text-center font-simple rounded-lg bg-[var(--blue)] drop-shadow-md hover:opacity-80"
+            href="mailto:lesheuresquifilent@gmail.com"
+            target="_blank"
+          >
+            <div class="flex justify-center items-center gap-4 text-[var(--white)]">
+              <img src="img/email.svg" class="w-6 md:w-8 drop-shadow-md" />
+              <p class="text-lg md:text-xl text-shadow-md">E-mail</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="max-w-5xl w-full mt-12 flex flex-row flex-wrap gap-4 items-center justify-center"
+      >
+        <div class="w-48 h-48">
+          <img src="img/Photo01.jpeg" alt="Tsuba cuir faite main" />
+        </div>
+        <div class="w-48 h-48">
+          <img src="img/Photo02.jpeg" alt="Sac hexagonal en cuir, cousu à la main" />
+        </div>
+        <div class="w-48 h-48">
+          <img src="img/Photo03.jpeg" alt="Chloé, artisane du cuir" />
+        </div>
+        <div class="w-48 h-48 bg-[var(--beige)]"></div>
+        <div class="w-48 h-48 bg-[var(--red)]"></div>
+      </div>
+    </div>
+    <footer class="flex justify-center py-2 font-simple">
+      <div class="text-sm">
+        Made with ♡ by
+        <a href="https://elisedjn.github.io/" target="_blank" class="font-bold"
+          >Elise Djn</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
